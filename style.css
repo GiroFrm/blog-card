@@ -55,10 +55,7 @@
     --Grey: hsl(0, 0%, 50%);
     --Black: hsl(0, 0%, 7%)
   }
-  @font-face {
-    font-family: Figtree-italic;
-    src: url(../blog-card/fonts/Figtree-Italic-VariableFont_wght.ttf);
-  }
+  
 
 
   body{
@@ -66,4 +63,70 @@
     font-size: 1rem;
 
     background-color: var(--Yellow);
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  font-family: Figtree;
+  }
+
+  article {
+    max-width: 350px;
+    background-color: var(--White);
+    padding: 1rem;
+    padding-bottom: 1.3rem;
+    font-family: Figtree;
+
+    border-radius: 1rem;
+    border: 1px solid var(--Black);
+    box-shadow: 7px 7px 1px var(--Black)
+  }
+
+  .article-img{
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+  }
+
+  .label{
+    background-color: var(--Yellow);
+    width: fit-content;
+    font-weight: bold;
+
+    margin-bottom: 0.4rem;
+  }
+
+  .date{
+    margin-bottom: 0.6rem
+  }
+  
+  .title{
+    font-weight: bold;
+
+    margin-bottom: 1rem;
+  }
+
+  .descr{
+    color: var(--Grey);
+    font-weight: 400;
+
+    margin-bottom: 1.2rem;
+  }
+
+  .avatar-container{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+  }
+
+  .avatar-container img {
+    width: 1.7rem;
+   
+  }
+
+  .avatar-container p {
+    font-weight: 800;
   }
